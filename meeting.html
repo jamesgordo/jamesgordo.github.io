@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meetings | KBN</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300|Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/home.html"><img src="/assets/logo.png" class="nav-logo"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="home.html">Dashboard</a></li>
+					<li class="active"><a href="meeting.html">Meetings</a></li>
+					<li><a href="log.html">Log Referrals</a></li>
+					<li><a href="member.html">Members</a></li>
+					<li><a href="open.html">My Referrals</a></li>
+					<li><a href="requests.html">Requests</a></li>
+					<li><a href="profile.html">Profile</a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Doe<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid animated fadeIn">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="important-msg-container">
+					<h2 class="reports-header">Key Meetings</h2>
+					<div class="form-group">
+		                <div class='input-group date' id='datetimepicker1'>
+		                    <input type='text' class="form-control" placeholder="Pick a date" />
+		                    <span class="input-group-addon">
+		                        <span class="glyphicon glyphicon-calendar"></span>
+		                    </span>
+		                </div>
+		            </div>
+		            <div class="form-group">
+		               	<select class="form-control">
+		            		<option>Select type</option>
+		            		<option>Active</option>   
+		            		<option>Expired</option>      
+		             	</select>
+		            </div>
+		            <div class="form-group">
+		               <input type='text' class="form-control" placeholder="Member 1 Name" />   
+		            </div>
+		            <div class="checkbox">
+					    <label>
+					      	<input type="checkbox"> Confirm
+					    </label>
+					</div>
+		            <div class="form-group">
+		               <input type='text' class="form-control" placeholder="Member 2 Name" />   
+		            </div>
+		            <div class="checkbox">
+					    <label>
+					      	<input type="checkbox"> Confirm
+					    </label>
+					</div>
+					<div class="form-group">
+		               <button class="btn btn-success btn-submit">Save</button>  
+		            </div>
+				</div>
+			</div>
+			<div class="col-sm-9 reports-container-box">
+				<div class="reports-container">
+					<h2 class="reports-header">Recent Meetings</h2>				
+				    <div class="table-responsive">
+					<table class="table">
+					    <thead>
+					    	<tr>
+					    		<th>Date</th>
+					    		<th>Member</th>
+					    		<th>Member</th>
+					    		<th>Type</th>
+					    		<th>Location</th>
+					    		<th>Action</th>
+					    	</tr>
+					    </thead>
+					    <tbody>
+					    	<tr>
+					    		<td>November 17, 2015</td>
+					    		<td>John Doe</td>
+					    		<td>Jack Black</td>
+					    		<td>Active</td>
+					    		<td>Queensland, Australia</td>
+					    		<td>
+					    			<button class="btn btn-primary btn-action" title="Edit"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+					    			<button class="btn btn-danger btn-action"  title="Delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+					    		</td>
+					    	</tr>
+					    	<tr>
+					    		<td>November 17, 2015</td>
+					    		<td>John Doe</td>
+					    		<td>Jack Black</td>
+					    		<td>Active</td>
+					    		<td>Queensland, Australia</td>
+					    		<td>
+					    			<button class="btn btn-primary btn-action" title="Edit"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+					    			<button class="btn btn-danger btn-action"  title="Delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+					    		</td>
+					    	</tr>
+					    	<tr>
+					    		<td>November 17, 2015</td>
+					    		<td>John Doe</td>
+					    		<td>Jack Black</td>
+					    		<td>Active</td>
+					    		<td>Queensland, Australia</td>
+					    		<td>
+					    			<button class="btn btn-primary btn-action" title="Edit"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+					    			<button class="btn btn-danger btn-action"  title="Delete"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+					    		</td>
+					    	</tr>
+					    </tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="/assets/js/moment.js"></script>
+	<script src="/assets/js/bootstrap-datepicker.min.js"></script>
+	<script src="/assets/js/chart.min.js"></script>
+	<script src="/assets/js/sample.js"></script>
+</body>
+</html>
